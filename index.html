@@ -46,7 +46,7 @@
 
         function timer(){
           let now = new Date().getTime();
-          total = dateFinal - now;
+          total = (dateFinal - now)+(180*60*1000); // ajustar o fuso horário 
 
           const days = Math.floor(total / day);
           const hours =  Math.floor(( total % day) / hour );
